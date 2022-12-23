@@ -126,6 +126,8 @@ writer = pd.ExcelWriter(str(sys.argv[1])+' edited-data.xlsx', engine='xlsxwriter
 df.to_excel(writer, sheet_name='Sheet1')
 writer.save()
 
+print("Finished")
+
 if __name__ == '__main__':
     if len(sys.argv) < 2:
         print('Usage: python timestamp_parser_v1_0.py <filename>')
