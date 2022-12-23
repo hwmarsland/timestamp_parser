@@ -20,13 +20,13 @@ PROGRAM STEPS
   - Clean up cells so next parsing steps are easier
   - Pull the last date accessed from the file cells and place it in the last date accessed column of those rows, then delete that infromation from the file cells
 - Remove the spacing in the last date accessed column using pandas' replace() method
-  - Pull the last time accessed from the file cells and place it in the last time accessed column of those rows, then delete that information form the file cells
+  - Pull the last time accessed from the file cells and place it in the last time accessed column of those rows, then delete that information from the file cells
 - Clean up the spacing in the last time accessed column using pandas' replace() method
   - Pull the filename from the file cells, combine it with the filepath column information from the same row, and populate the file filepath column in the same row with the new string
-- Make sure everything is seperated by a single space in the file filepath column using pandas' replace() method
+- Make sure everything is separated by a single space in the file filepath column using pandas' replace() method
 - Remove the first character of each cell in the file filepath column to remedy a spacing issue
 - Iterate through the file filepath column, cleaning away any cells in the folder filepath column that correspond to empty cells in the file filepath column
-- Make sure everything is seperated by a single space in the folder filepath column using pandas' replace() method
+- Make sure everything is separated by a single space in the folder filepath column using pandas' replace() method
 - Remove the first character of each cell in the folder filepath column to remedy a spacing issue
 - Remove the temp column using pandas' drop() method
 - Write the edited data into a new excel file using pd.ExcelWriter()
