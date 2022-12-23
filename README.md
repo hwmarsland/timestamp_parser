@@ -7,7 +7,8 @@ USAGE
 - This program is run through the command line with the line "python timestamp_parser_v1_0.py &lt;filename&gt;" but has a reminder of proper usage if this line is not input properly.
 - The filename portion is to be filled with the name of the excel file that the user would like to be parsed.
 
-PROGRAM STEPS (Indented steps involve iterating through the temp column)
+PROGRAM STEPS 
+(Indented steps involve iterating through the temp column)
 - Collect the information from the command line call
 - Use pd.read_excel() to read the contents of the file input in the command line
 - Use pandas' copy() method to create a copy of the excel file's data
