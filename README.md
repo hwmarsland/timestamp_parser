@@ -1,4 +1,4 @@
-# timestamp_parser
+# Timestamp Parser
 
 DESCRIPTION
 - This program (aka parser) is based on the output of another program (aka timestamp, not included here). The timestamp program went through a database and collected all of the data regarding the names of the files and the last time each of them were opened, outputting the results into a single column of an excel file. This output was impossible to sort as each file (along with the time and date of its last access in a single cell) was listed with the other files in the same folder beneath the filepath of said folder. This parser program took that excel file and broke it up so each file was associated with a row (instead of a single cell) that contained the name/filepath of the file, the filepath of the folder that the file was in, the date that the file was last accessed and the time of day the file was last accessed. This greatly improved readability and allowed the files to be sorted by the last time they were opened so that all files not opened within the last six months could be marked.
